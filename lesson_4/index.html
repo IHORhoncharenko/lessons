@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title | Рекомендації щодо заповнення HTML тега</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- З менторами погоджено можливість не використовувати тег main -->
+    <header>
+        <hgroup>
+            <h1 id="element-title">
+                Елемент title_
+            </h1>
+
+            <p>
+                Призначення елементу <code class="language-html">title</code> згідно специфікації <i lang="en"><abbr title="HyperText Markup Language">HTML5</abbr></i> і рекомендаціям від <i lang="en"><dfn title="Найбільша у світі пошукова система інтернету, що належить корпорації Google Inc..">Google</dfn></i>
+            </p>
+        </hgroup>
+
+        <nav>
+            <h2>Навігація</h2>
+            <ul>
+                <li>
+                    <a href="#element-title">Рекомендації згідно стандарту HTML5</a>
+                </li>
+                <li>
+                    <a href="#top-recommendations-from-google">Рекомендації від Google</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <dl>
+            <dt>
+                Категорії:
+            </dt>
+            <dd>
+                Вміст метаданих.
+            </dd>
+            <dt>
+                Контексти, в яких можна використовувати цей елемент:
+            </dt>
+            <dd>
+                В <code class="language-html">head</code> елементі, який не містить інших <code class="language-html">title</code> елементів.
+            </dd>
+            <dt>
+                Модель вмісту:
+            </dt>
+            <dd>
+                Текст.
+            </dd>
+            <dt>
+                Пропуск тегу в text/html:
+            </dt>
+            <dd>
+                Жоден тег не можна пропустити.
+            </dd>
+            <dt>
+                Атрибути вмісту:
+            </dt>
+            <dd>
+                Глобальні атрибути.
+            </dd>
+        </dl>
+
+        <blockquote lang="en" cite="https://html.spec.whatwg.org/multipage/semantics.html#the-title-element">
+            <p>
+                The title element represents the document's title or name. Authors should use titles that identify their documents even when they are used out of context, for example in a user's history or bookmarks, or in search results. The document's title is often different from its first heading, since the first heading does not have to stand alone when taken out of context.
+            </p>
+
+            <p>
+                There must be no more than one title element per document.
+            </p>
+        </blockquote>
+
+        <p>
+            Таким чином елемент <code class="language-html">title</code> уособлює заголовок або назву документу. Значення для цього тегу слід підбирати таким чином щоб воно максимально описувало вміст розглядаємого документа. Для перевірки корекності можна використовувати наведений приклад:
+        </p>
+
+        <ol>
+            <li>
+                Відкриваємо в браузері розглядаємий документ і будь який інший сайт.
+                <p class="annotation">
+                    Таким чином в браузері має відображатись дві вкладки з будь-якими сайтами.<br>
+                    <img width="500" src="img/two-tabs.png" alt="В браузері Chrome на першій вкладці відображений сайт перекладач &#8243;Deepl&#8243; та якийсь інший сайт.">
+                </p>
+            </li>
+            <li>
+                Наводимо курсором на не активну вкладку.
+                <p class="annotation">
+                    Якщо по тексту можна зрозуміти що собою представляє документ, тоді скоріше за все <code class="language-html">title</code> написаний коректно. Але з нашого показового сайту не зрозуміло що уособлює в собі документ. <strong><code class="language-js">document.title === 'Обзор' //true</code></strong> Тому скоріш за все тут помилка. <br>
+                    <img width="500" src="img/review.png" alt="В браузері Chrome на першій вкладці відображений сайт перекладач &#8243;Deepl&#8243; та зроблений акцент на назві сайту в другій не активній вкладці.">
+                </p>
+            </li>
+            <li>
+                Переходимо на неактивну вкладку з відображенням ресурсу та наводимо вже курсор на першу вкладку, яка наразі стала не активна.
+                <p class="annotation">
+                    Тепер нам зрозуміло що саме уособлює документ, з огляду на його опис <strong><code class="language-js">document.title === 'DeepL Translate – Самый точный переводчик в мире' //true</code></strong> це якийсь перекладач. <br>
+                    <img width="500" src="img/correct-title.png" alt="Зроблений акцент на корректності та повноті опису документа, який схований під не активною вкладкою в браузері Chrome.">
+                </p>
+            </li>
+        </ol>
+
+        <p class="warning">
+            У документі має бути <strong>не більше одного елемента <code class="language-html">title</code></strong>.
+        </p>
+
+        <section>
+            <h2 id="top-recommendations-from-google">
+                Переважні рекомендації від Google
+            </h2>
+            <ul>
+                <li>
+                    Текст у тезі <code class="language-html">title</code> має бути стислим та інформативним.
+                </li>
+                <li>
+                    Не використовуйте занадто багато ключових слів.
+                </li>
+                <li>
+                    Намагайтеся не використовувати повторюваний і шаблонний текст.
+                </li>
+                <li>
+                    Мова і писемність у заголовку і на цільовій сторінці мають збігатися.
+                </li>
+            </ul>
+            <p>
+                Підсумуючи додам що на початку тега <code class="language-html">title</code> необхідно прописувати високочастотний ключовий запит бажано не змінюючи словоформу.
+            </p>
+            <footer>
+                Більш детально описано в <a href="https://developers.google.com/search/docs/appearance/title-link?hl=ru#page-titles" target="_blank" rel="noopener noreferrer">документації <i>Центр Google Поиска</i></a>
+            </footer>
+        </section>
+    </div>
+    <footer>
+        <p>
+            Джерела які були використані при написанні посту:
+        </p>
+        <ul>
+            <li>
+                <a href="https://developers.google.com/search/docs/appearance/title-link" target="_blank" rel="noopener noreferrer">Довідник <i>Центр Google Поиска</i></a>
+            </li>
+            <li>
+                <a href="hhttps://html.spec.whatwg.org/multipage/semantics.html#the-title-element" target="_blank" rel="noopener noreferrer"><abbr title="Web Hypertext Application Technology Working Group">WHATWG</abbr></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

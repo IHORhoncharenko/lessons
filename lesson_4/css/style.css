@@ -1,0 +1,43 @@
+@import url("reset.css");
+
+* {
+  color: green;
+}
+code.language-html {
+  color: darkorange;
+}
+.language-html {
+  color: green;
+}
+.annotation {
+  color: green;
+}
+.language-js {
+  color: green;
+}
+
+.container p {
+  color: aquamarine;
+}
+.container > p {
+  color: blueviolet;
+}
+.container > p.warning,
+.container > p.warning strong,
+.container > p.warning strong code {
+  color: red;
+}
+
+i[lang*="en"] abbr {
+  color: brown;
+}
+[lang*="en"] abbr {
+  color: blue;
+}
+
+dt ~ dd {
+  color: yellow;
+}
+dt + dd {
+  color: goldenrod;
+}
