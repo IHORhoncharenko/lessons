@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+@font-face {
+  font-family: "Gloria Hallelujah";
+  src: url("../fonts/GloriaHallelujah-Regular.woff2") format("woff2"),
+    url("../fonts/GloriaHallelujah-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dongle";
+  src: url("../fonts/Dongle-Bold.woff2") format("woff2"),
+    url("../fonts/Dongle-Bold.woff") format("woff");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dongle";
+  src: url("../fonts/Dongle-Light.woff2") format("woff2"),
+    url("../fonts/Dongle-Light.woff") format("woff");
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Dongle";
+  src: url("../fonts/Dongle-Regular.woff2") format("woff2"),
+    url("../fonts/Dongle-Regular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-BlackItalic.woff2) format("woff2"),
+    url(../fonts/Raleway-BlackItalic.woff) format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-BoldItalic.woff2) format("woff2"),
+    url(../fonts/Raleway-BoldItalic.woff) format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway-ExtraBoldItalic.woff2) format("woff2"),
+    url(../fonts/Raleway-ExtraBoldItalic.woff) format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
