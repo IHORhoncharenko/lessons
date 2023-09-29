@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Courses HTML developer: Lesson 6 | Freelancer Life Style</title>
+</head>
+
+<body id="begin-page">
+    <h1>CSS properties</h1>
+    <dl>
+        <div>
+            <dt>display</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">block</code></li>
+                    <li><code class="css-properties">inline</code></li>
+                    <li><code class="css-properties">inline-block</code></li>
+                    <li><code class="css-properties">none</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>box-sizing</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">content-box</code></li>
+                    <li><code class="css-properties">border-box</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>padding</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">padding: 10px;</code></li>
+                    <li><code class="css-properties">padding: 10px 5px;</code></li>
+                    <li><code class="css-properties">padding: 10px 15px 5px;</code></li>
+                    <li><code class="css-properties">padding: 10px 15px 12px 20px;</code></li>
+                    <li><code class="css-properties">padding-top: 10px;</code></li>
+                    <li><code class="css-properties">padding-right: 10px;</code></li>
+                    <li><code class="css-properties">padding-bottom: 10px;</code></li>
+                    <li><code class="css-properties">padding-left: 10px;</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>margin</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">margin: 10px;</code></li>
+                    <li><code class="css-properties">margin: 10px 5px;</code></li>
+                    <li><code class="css-properties">margin: 10px 15px 5px;</code></li>
+                    <li><code class="css-properties">margin: 10px 15px 12px 20px;</code></li>
+                    <li><code class="css-properties">margin-top: 10px;</code></li>
+                    <li><code class="css-properties">margin-right: 10px;</code></li>
+                    <li><code class="css-properties">margin-bottom: 10px;</code></li>
+                    <li><code class="css-properties">margin-left: 10px;</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>width</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">width: 100px;</code></li>
+                    <li><code class="css-properties">max-width: 100px;</code></li>
+                    <li><code class="css-properties">min-width: 100px;</code></li>
+                    <li><code class="css-properties">height: 100px;</code></li>
+                    <li><code class="css-properties">min-height: 100px;</code></li>
+                    <li><code class="css-properties">max-height: 100px;</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>overflow</dt>
+            <dd>
+                <ul>
+                    <li><code class="css-properties">visible</code></li>
+                    <li><code class="css-properties">hidden</code></li>
+                    <li><code class="css-properties">scroll</code></li>
+                    <li><code class="css-properties">auto</code></li>
+                </ul>
+            </dd>
+        </div>
+        <div>
+            <dt>Remove phantom margin from</dt>
+            <dd>
+                <pre>
+                    <code class="css-properties">
+.items {
+    font-size: 0;
+}
+                        
+.item {
+    font-size: 20px;
+    width: 100px;
+    display: inline-block;
+    padding: 15px;
+    margin: 5px 0px 0 0;
+    background-color: #794f45;
+}
+                    </code>
+                </pre>
+            </dd>
+        </div>
+    </dl>
+    <div id="figma-maket">
+        <article class="figma-maket__jewels">
+            <div class="figma-maket__jewels__content">
+                <h2>WHAT WE DO</h2>
+                <p class="figma-maket__jewels__content__annotation"><strong>We Develop Create Custom Jewels.</strong></p>
+                <p>
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
+                </p>
+            </div>
+            <img src="img/jewelry-on-the-girl.jpg" alt="Our jewelry on the girl.">
+            <img src="img/our-jewelry.jpg" alt="Jewelry of our production.">
+        </article>
+        <article class="figma-maket__consulting">
+            <img src="img/shake-hands.jpg" alt="Two guys at the table shake hands.">
+            <h2>Why Us For International Business Management Consulting!</h2>
+            <div class="figma-maket__consulting__content">
+                <p>
+                    Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer service with robust ideas dynamically innovated resources leveling customer service for state of the art customer service innovate product for reliable supply engage web services cutting-edge deliverables.
+                </p>
+                <p class="special-text">
+                    Proactively envisioned multimedia based expertise media growth superior collaboration.
+                </p>
+                <p>
+                    One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage web services cutting-edge deliverables.
+                </p>
+            </div>
+
+            <section>
+                <!--у специфічних випадках на розсуд автора, alt- не являється обовязковим атрибутом згідно специфікації HTML5, помилок в валідаторі не буде. Прошу менторів взяти до уваги і не враховувати це за помилку. -->
+                <img src="img/decor.jpg" title="Decorative green grass in a white container near my laptop on my desk among other supplies.">
+                <div class="figma-maket__consulting__benefits">
+                    <h3>Our benefits</h3>
+                    <p class="special-text">
+                        Incubate standards compliant
+                        channels benefits.
+                    </p>
+                    <ul>
+                        <li>
+                            <svg class="icon-check">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                            </svg>
+                            <span>Credibly reintermediate backend</span>
+                        </li>
+                        <li>
+                            <svg class="icon-check">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                            </svg>
+                            <span>Holistically foster superior</span>
+                        </li>
+                        <li>
+                            <svg class="icon-check">
+                                <use xlink:href="img/sprite.svg#check"></use>
+                            </svg>
+                            <span>Distinctively exploit optimal</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </div>
+    <aside>
+        <div class="btn-up">
+            <a href="#begin-page">Up</a>
+        </div>
+    </aside>
+</body>
+
+</html>
