@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Courses HTML developer: Lesson 7 | Freelancer Life Style</title>
+</head>
+
+<body>
+    <header>
+        <h1>CSS properties: blocks</h1>
+        <nav>
+            <h2>Navigation</h2>
+            <ul data-id="main-navigation">
+                <li data-id="licencing-page"><span>Licencing</span></li>
+                <li data-id="project-information-page"><span>Project information</span></li>
+                <li data-id="clothing-page"><span>Clothing for Women Online in India</span></li>
+                <li data-id="jewels"><span>WHAT WE DO</span></li>
+                <li data-id="images-border"><span>Practice: Images border</span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article id="licencing-page">
+        <header>
+            <hgroup>
+                <p>
+                    <!-- Використовую таку конструкцію з пустим тегом, так як псевдоелементи :before/:after ще не вчили -->
+                    <span class="licencing__icon"></span>
+                    <span>Template Information</span>
+                </p>
+                <h2>Licencing</h2>
+            </hgroup>
+        </header>
+        <section>
+            <h3>Icons & Graphics</h3>
+            <div class="licencing__text first">
+                <p>
+                    Icons and Graphics were manually designed by the VictorFlow team. You may download these and edit them to fit your website without asking for permission or providing credit.
+                </p>
+            </div>
+            <p class="licencing__entity">
+                <!-- це дуже схоже на посилання на саму ліцензію. Треба уточнення від Анжели, томущо в макеті не так :)  -->
+                <i>Phosphor Icons:</i> <a href="#">License</a>
+            </p>
+        </section>
+        <section>
+            <h3>Photography</h3>
+            <div class="licencing__text second">
+                <!-- тег <i> для цього типу контенту в контексті параграфу я не міг не вказати, в стилях відображення поправлю згідно макету -->
+                <p>
+                    All images used in the WhiteCollar Webflow Template are licensed for free personal and commercial use. If you'd like to use any specific image, you can check the licenses and download the images for free on <i>Unsplash</i>, <i>Pexels</i>.
+                </p>
+            </div>
+            <dl>
+                <div class="pexel-images">
+                    <dt class="licencing__entity">
+                        <!-- це дуже схоже на посилання на саму ліцензію. Треба уточнення від Анжели, томущо в макеті не так :)  -->
+                        <i class="taxonomy">Pexels:</i> <a href="#">License</a>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>Image 1,</li>
+                            <li>Image 2,</li>
+                            <li>Image 3,</li>
+                            <li>Image 4,</li>
+                            <li>Image 5,</li>
+                            <li>Image 6,</li>
+                            <li>Image 7,</li>
+                            <li>Image 8,</li>
+                            <li>Image 9,</li>
+                            <li>Image 10,</li>
+                            <li>Image 11,</li>
+                            <li>Image 12,</li>
+                            <li>Image 13,</li>
+                            <li>Image 14,</li>
+                            <li>Image 15,</li>
+                            <li>Image 16,</li>
+                            <li>Image 17,</li>
+                            <li>Image 18,</li>
+                            <li>Image 19,</li>
+                            <li>Image 20</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div>
+                    <dt class="licencing__entity">
+                        <!-- це дуже схоже на посилання на саму ліцензію. Треба уточнення від Анжели, томущо в макеті не так :)  -->
+                        <i class="taxonomy">Unsplash:</i> <a href="#">License</a>
+                    </dt>
+                    <dd>
+                        <ul>
+                            <li>Image 1,</li>
+                            <li>Image 2,</li>
+                            <li>Image 3,</li>
+                            <li>Image 4,</li>
+                            <li>Image 5,</li>
+                            <li>Image 6,</li>
+                            <li>Image 7,</li>
+                            <li>Image 8,</li>
+                            <li>Image 9,</li>
+                            <li>Image 10,</li>
+                            <li>Image 11,</li>
+                            <li>Image 12,</li>
+                            <li>Image 13,</li>
+                            <li>Image 14,</li>
+                            <li>Image 15,</li>
+                            <li>Image 16,</li>
+                            <li>Image 17</li>
+                        </ul>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+        <section class="licencing__last-section">
+            <h3>Fonts</h3>
+            <!-- Тут я б також зробив би посилання на https://fonts.google.com/ та самі шрифти до скачування Poppins та Inter. Треба уточнення у Анжели. -->
+            <p>
+                WhiteCollar template uses free licensed <i class="taxonomy">Google Fonts</i>. Please check <i class="taxonomy">Poppins</i> and <i class="taxonomy">Inter</i>.
+            </p>
+        </section>
+    </article>
+    <article id="project-information-page">
+        <div class="project-information-page__project-details">
+            <div class="project-information-page__title">
+                <p>
+                    Project Details
+                </p>
+            </div>
+            <dl>
+                <div class="project-information-page__project-details__group">
+                    <dt>Client :</dt>
+                    <dd>Katherine Coleman</dd>
+                </div>
+                <div class="project-information-page__project-details__group">
+                    <dt>Location :</dt>
+                    <dd>New York United States</dd>
+                </div>
+                <div class="project-information-page__project-details__group">
+                    <dt>Project Date :</dt>
+                    <dd>15 September, 2023</dd>
+                </div>
+                <div class="project-information-page__project-details__group">
+                    <dt>Website :</dt>
+                    <dd><a href="http://whitecollar.com">http://whitecollar.com</a></dd>
+                </div>
+            </dl>
+        </div>
+        <div class="project-information-page__main-container">
+            <h2>Project Information</h2>
+            <div class="project-information-page__main-container__text">
+                <p>
+                    Distinctively re-engineer revolutionary meta service and premium architectures incubate intuitive opportunities and real-time potentialities. Appropriately communicates once one technology after plug-and-play networks.
+                </p>
+                <p>
+                    Quickly aggregates users and worldwides potentialities progressively plagiarize resource leveling e-commerce through resource leveling cores competencies dramatically mesh low risk high yield alignments before transparent e-tailers.
+                </p>
+                <ul class="project-information-page__main-container__text__list-disc">
+                    <li>the printing and typesetting industry.</li>
+                    <li>Lorem Ipsum has been the industry's standard</li>
+                    <li>It has survived not only five centuries.</li>
+                </ul>
+                <p>
+                    Compellingly embrace empowered e-business after user friendly intellectual capitals Interactively actualize front-end processes with effectives convergenced Synergistically deliver performanced based methods empowerment whereas distributed expertised efficiently enable enabled sources and cost effective products completely ethical communities.
+                </p>
+                <ul class="project-information-page__main-container__text__list-decimal-leading-zero">
+                    <li>the printing and typesetting industry.</li>
+                    <li>Lorem Ipsum has been the industry's standard</li>
+                    <li>It has survived not only five centuries.</li>
+                </ul>
+                <p>
+                    Compellingly embrace empowered e-business after user friendly intellectual capitals Interactively actualize front-end processes with effectives convergenced Synergistically deliver performanced based methods empowerment whereas distributed expertised efficiently enable enabled sources and cost effective products completely ethical communities.
+                </p>
+            </div>
+        </div>
+    </article>
+    <article id="clothing-page">
+        <hgroup>
+            <h2>Clothing for Women Online in India</h2>
+            <p>Reexplore Women's Clothing Collection Online at Euphoria</p>
+        </hgroup>
+
+        <div class="clothing-page-text">
+            <p>
+                Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India? Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual Womens Wear Online shopping to premium quality cotton women's apparel, <i>Euphoria</i> has closet of Women Collection covered with the latest and best designs of Women's Clothing Online.
+            </p>
+            <p>
+                Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear.
+            </p>
+            <p class="clothing-page-text__special-text">
+                <strong>One-Stop Destination to Shop Every Clothing for Women: <i>Euphoria</i></strong>
+            </p>
+            <p>
+                Today, Clothing for Women is gaining more popularity above all. This is because gone are the days when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in Casual Womens Wear which is a comfortable outfit. Concerning this, <i>Euphoria</i> has a big fat range of Stylish Women's Clothing that would make her the winner wherever she goes.
+            </p>
+            <p>
+                Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. It is quite evident to say that there are very few Womens Clothing online stores where you can buy Western Wear for Women comprising the premium material and elegant design that you are always seeking for. Basically,
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem repellendus provident veritatis impedit sit molestiae quos nisi perferendis molestias. Nemo fuga placeat incidunt voluptas ad modi sunt perferendis! Nemo!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem repellendus provident veritatis impedit sit molestiae quos nisi perferendis molestias. Nemo fuga placeat incidunt voluptas ad modi sunt perferendis! Nemo!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem repellendus provident veritatis impedit sit molestiae quos nisi perferendis molestias. Nemo fuga placeat incidunt voluptas ad modi sunt perferendis! Nemo!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem repellendus provident veritatis impedit sit molestiae quos nisi perferendis molestias. Nemo fuga placeat incidunt voluptas ad modi sunt perferendis! Nemo!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et exercitationem repellendus provident veritatis impedit sit molestiae quos nisi perferendis molestias. Nemo fuga placeat incidunt voluptas ad modi sunt perferendis! Nemo!
+            </p>
+        </div>
+        <button>See More</button>
+    </article>
+    <article id="jewels">
+        <div class="jewels__text">
+            <h2>WHAT WE DO</h2>
+            <p class="jewels__text__special-text">
+                We Develop Create Custom Jewels.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, conse elit, sedid do eiusmod tempor incidi ut labore et dolore magna aliqua. Quis ipsum usendi laboris mollit
+            </p>
+        </div>
+        <div class="img-arr">
+            <img src="img/girl-with-a-flower-compleate.jpg" alt="Girl with the gorgeous necklace and flower.">
+            <img src="img/girl-with-dainty-earrings-compleate.jpg" alt="Girl with dainty-earrings.">
+        </div>
+    </article>
+    <aside id="images-border">
+            <div class="img-onee"><img src="img/girl-with-a-flower.jpg" alt="Girl with the gorgeous necklace and flower."></div>
+            <div class="img-twoo"><img src="img/girl-with-dainty-earrings.jpg" alt="Girl with dainty-earrings."></div>
+    </aside>
+    <footer>
+        2023, IHOR[honcharenko]
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

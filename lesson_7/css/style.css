@@ -1,0 +1,356 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+  color: #7d7d7d;
+  font-weight: 400;
+}
+body > footer{
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #37393f;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 11px;
+}
+h1 {
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 50px;
+  text-shadow: 5px -5px 5px rgba(0, 0, 0, 0.48);
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 40px;
+}
+nav {
+  background-color: #c5c5c52c;
+  padding: 15px 0;
+}
+nav > h2 {
+  font-size: 20px;
+  padding-left: 20px;
+}
+nav > ul {
+  padding-left: 40px;
+}
+nav > ul li > span {
+  border-bottom: 2px solid #40ddb6;
+}
+/* зверху та знизу роблю саме внутрішні відступи, так як в умовах завдання інших блоків на сторінці не існує https://prnt.sc/PntSN_nBpN0F, а зовнішні лише в якості відцентровування */
+#licencing-page {
+  margin: 0 auto;
+  max-width: 1218px;
+  margin-bottom: 150.5px;
+}
+#licencing-page>header{
+margin-bottom: 70px;
+}
+
+#licencing-page hgroup {
+  text-align: center;
+}
+/* для елементу явно прописую normal так як без цього значення висота відображається як 18px https://prnt.sc/mIK6CBGsnOg9, а по макету треба 22px https://prnt.sc/TAsa8jxuA8o9 https://prnt.sc/YffnNhNa1LR1 */
+#licencing-page hgroup p {
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+  font-size: 0;
+  color: #37393F;
+}
+.licencing__icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #40ddb6;
+  margin-right: 6px;
+}
+hgroup > p > span:last-child {
+  font-size: 18px;
+}
+.licencing__text.first {
+  margin-bottom: 32px;
+}
+.licencing__text.second {
+  margin-bottom: 24px;
+}
+/* Вертаю стилі для семантичного тегу <i> щоб візуально текст був ідентичний з макетом */
+.licencing__text.second i {
+  font-style: normal;
+}
+p.licencing__entity,
+dt.licencing__entity {
+  color: #40ddb6;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+p.licencing__entity > i,
+dt.licencing__entity > i {
+  color: #37393f;
+  font-weight: 700;
+  font-style: normal;
+}
+/* dt.licencing__entity {
+  margin-bottom: 8px;
+} */
+/* це дуже схоже на посилання на саму ліцензію, але щоб було ідентично з макетом, закоментую. Треба уточнення від Анжели :) */
+/* .licencing__entity > a {
+  border-bottom: 2px solid #40ddb6;
+} */
+#licencing-page > section {
+  margin-bottom: 100px;
+}
+section.licencing__last-section {
+  margin-bottom: 0px;
+}
+.pexel-images {
+  margin-bottom: 24px;
+}
+#licencing-page dt.licencing__entity{
+margin-bottom: 8px;
+}
+dd > ul li {
+  display: inline;
+  color: #40ddb6;
+}
+i.taxonomy {
+  color: #40ddb6;
+  font-weight: 500;
+  font-style: normal;
+}
+#project-information-page {
+  margin: 0 auto;
+  max-width: 1220px;
+  font-size: 0;
+}
+.project-information-page__project-details {
+  display: inline-block;
+  max-width: 360px;
+  max-height: 471px;
+  vertical-align: top;
+  font-size: 18px;
+}
+.project-information-page__main-container {
+  display: inline-block;
+  max-width: 830px;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.project-information-page__main-container h2 {
+  font-size: 40px;
+  line-height: 1.27;
+  margin-bottom: 13px;
+}
+.project-information-page__main-container__text > * {
+  margin-bottom: 35px;
+}
+.project-information-page__main-container__text li {
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.project-information-page__title {
+  background-color: #40ddb6;
+  width: 360px;
+  height: 80px;
+  padding: 23.5px 144px 24.5px 34px;
+}
+.project-information-page__title > p {
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.27;
+}
+.project-information-page__project-details dl {
+  padding: 37px 38px 37px 37px;
+  background-color: #f4f4f4;
+}
+.project-information-page__project-details__group {
+  border-bottom: solid 1px #c5c5c5;
+  margin-bottom: 15px;
+  padding-bottom: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-information-page__project-details__group dt {
+  color: #37393f;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 1px;
+}
+.project-information-page__main-container__text__list-decimal-leading-zero li{
+  list-style: decimal-leading-zero;
+}
+.project-information-page__main-container__text__list-disc li{
+  list-style:disc
+}
+.project-information-page__main-container__text__list-decimal-leading-zero,
+.project-information-page__main-container__text__list-disc{
+  padding-left: 49px;
+}
+#clothing-page{
+  max-width: 1240px;
+  margin: 0 auto;
+  color: #807D7E;
+  font-size: 20px;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+  padding-left: 21px;
+}
+#clothing-page p{
+  margin-bottom: 20px;
+  font-family: 'Causten', sans-serif;
+  font-weight: 400;
+}
+#clothing-page hgroup p,
+#clothing-page hgroup h2,
+#clothing-page p.clothing-page-text__special-text{
+  font-family: 'CoreSansC', sans-serif;
+  font-weight: 600;
+}
+#clothing-page hgroup h2{
+  color: #3C4242;
+  font-size: 28px;
+  line-height: 1.196;
+  letter-spacing: 0.56px;
+  margin-bottom: 30px;
+}
+#clothing-page hgroup p{
+  margin-bottom: 25px;
+}
+#clothing-page p.clothing-page-text__special-text{
+  margin-bottom: 25px;
+}
+#clothing-page div.clothing-page-text i{
+  font-style: normal;
+  font-weight: 700;
+}
+#clothing-page button{
+  letter-spacing: 0.4px;
+  line-height:1.675;
+  font-size: 20px;
+  color: #807D7E;
+  background-color: white;
+  font-family: 'CoreSansC', sans-serif;
+  font-weight: 600;
+  padding-bottom: 100px;
+}
+#clothing-page button:hover,
+nav > ul li>span:hover{
+cursor: pointer;
+font-weight: 600;
+}
+/* Виставляю ширину контейнера на 30px більше через те, внаслідок того що ми ще не вивчали як забрати зовнішній відступ у останнього елементу. В данному випадку я говорю в контексті зображень, де згідно макету має бути тільки тільки один зовнішній відступ між першим та другим зображенням */
+#jewels{
+  margin: 0 auto;
+  max-width: 1132px;
+  margin-bottom: 160px;
+}
+#jewels > div{
+  vertical-align: middle;
+} 
+#jewels .jewels__text{
+  display: inline-block;
+  max-width: 503px;
+  margin-right: 75px;
+}
+#jewels .jewels__text>h2{
+color: #D58417;
+font-family: 'CormorantInfant', serif;
+font-weight: 700;
+font-size: 20px;
+line-height: 1;
+}
+#jewels .jewels__text p{
+  color: #606060;
+  font-family: 'CormorantInfant', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+#jewels p.jewels__text__special-text{
+  color: #000;
+  font-size: 64px;
+  line-height: 1;
+  margin-bottom: 31px;
+}
+#jewels .img-arr {
+  font-size: 0;
+  display: inline-block;
+}
+#jewels .img-arr img{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+/* Реалізував логіку відображення бордера для блочних елементів, але в сукупності з інлайновими реалізувати не вдалось...в процесі багатьох годин спроб постраждала мишка і ледь не постраждав ноутбук. Це взагалі можливо зробити ? */
+#images-border .img-onee{
+  margin: 0 auto;
+  border: 1px solid #502203;
+  border-radius: 235px;
+  max-width: 177px;
+  margin-bottom: 20px;
+}
+#images-border .img-twoo{
+  margin: 0 auto;
+  border: 1px solid #502203;
+  border-radius: 235px;
+  max-width: 308px;
+  margin-bottom: 100px;
+}
+#images-border .img-onee > img{
+  margin-left: -10px;
+  margin-top: 14px;
+  margin-bottom: -14px;
+  margin-right: -10px ;
+}
+#images-border .img-twoo > img{
+  margin-left: -11px;
+  margin-top: 19px;
+  margin-bottom: -13px;
+  margin-right: -10px ;
+}
+/* Реалізував мінімальну логіку на JS тільки щоб використати/потренуватись в властивостях display && overflow і щоб це органічно виглядало в документі. Пhошу не звертати увагу на js */
+
+#licencing-page,
+#project-information-page,
+#clothing-page,
+#jewels,
+#images-border {
+  display: none;
+}
+#licencing-page.active,
+#project-information-page.active,
+#clothing-page.active,
+#jewels.active,
+#images-border.active {
+  display: block;
+}
+#clothing-page div.clothing-page-text{
+  max-height: 462px;
+  overflow-y: hidden;
+}
+#clothing-page div.clothing-page-text.show{
+  max-height: none;
+  overflow-y:visible;
+}
