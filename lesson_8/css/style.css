@@ -1,0 +1,154 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+  padding: 15px;
+}
+hgroup {
+  margin-bottom: 25px;
+}
+h1 > i.taxonomy {
+  color: white;
+  font-weight: 700;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+}
+.main-header > hgroup {
+  text-align: center;
+}
+.main-header > hgroup > h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.main-header > hgroup > p {
+  font-size: small;
+  font-style: italic;
+  text-decoration: overline;
+}
+.main-header > nav {
+  padding: 5px 0;
+  background-color: rgba(96, 151, 105, 0.159);
+}
+
+/* Приховую назву секції так як вона не повинна відбражатись в документі згідно моєї задумки як автора цього макету, але повинна бути явно вказана згідно специфікації */
+.main-header > nav > h2 {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.main-header > nav > ul li:hover {
+  font-weight: 600;
+  cursor: pointer;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+#notes > ul {
+  margin-bottom: 20px;
+}
+.properties {
+  padding: 15px;
+  position: relative;
+}
+.properties h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.properties h2 > i {
+  color: rgba(96, 151, 105, 0.604);
+}
+.properties h2 > i:hover {
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+.properties .annotation {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 15px;
+  font-size: small;
+  font-style: italic;
+  line-height: 1.5;
+  background: rgba(238, 232, 232, 0.416);
+  box-shadow: 12px 12px 10px -2px rgba(0, 0, 0, 0.75);
+}
+.properties__content .annotation > p,
+.properties__content .properties__content__emulation {
+  margin-bottom: 10px;
+}
+.properties__content .annotation > ol {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.properties__content .annotation > ol li {
+  list-style: decimal;
+}
+.properties__result__wrap {
+  position: relative;
+  max-width: 50em;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.299);
+  text-align: center;
+  letter-spacing: 1em;
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px rgba(65, 60, 60, 0.6);
+  min-height: 20em;
+}
+.properties__result {
+  position: absolute;
+  max-width: 300px;
+  max-height: 300px;
+}
+.emulation-group__check {
+  margin-bottom: 20px;
+}
+.emulation-group__emulation {
+  margin-bottom: 20px;
+}
+.emulation-group__emulation-dev {
+  display: none;
+  margin-bottom: 20px;
+}
+.hide {
+  display: none;
+}
+.emulation-group__emulation-dev {
+  position: relative;
+}
+svg.modal + label::before {
+  content: "background: 1)background-color 2)background-image 3)background-position / 4)background-size 5)background-repeat 6)background-attachment 7)background-origin 8)background-clip";
+  position: absolute;
+  color: rgba(96, 151, 105, 0.604);
+  bottom: 20px;
+  vertical-align: middle;
+}
+.emulation-group__emulation-dev svg:hover {
+  cursor: pointer;
+  fill: rgba(96, 151, 105, 0.868);
+}
+svg {
+  max-width: 20px;
+  max-height: 20px;
+  vertical-align: middle;
+  fill: rgba(96, 151, 105, 0.604);
+}
+footer {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+/* html::before{
+  content: 'Ddtlsnm Dfis rjynfrnys lfys';
+  background: gray;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+} */

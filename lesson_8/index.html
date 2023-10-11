@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Курси HTML-розробника: урок 8 | Freelancer Life Style</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <hgroup>
+            <h1><dfn><abbr title="Cascading Style Sheets"><i lang="en">CSS</i></abbr></dfn> властивість: <i class="taxonomy" lang="en">background</i></h1>
+            <p>Верстка елементів макетів та довільне відпрацювання нової властивості.</p>
+        </hgroup>
+
+        <nav>
+            <h2>Навігація</h2>
+            <ul data-id="main-navigation">
+                <li data-id="notes">Нотатки стосовно властивості <i class="taxonomy" lang="en">background</i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="notes">
+        <p>Доступні до використання властивості</p>
+        <ul>
+            <li><a href="#background">background</a></li>
+            <li>background-attachment</li>
+            <li>background-blend-mode</li>
+            <li>background-clip</li>
+            <li>background-color</li>
+            <li>background-image</li>
+            <li>background-origin</li>
+            <li>background-position
+                <ul>
+                    <li>background-position-x</li>
+                    <li>background-position-y</li>
+                </ul>
+            </li>
+            <li>background-repeat</li>
+            <li>background-size</li>
+        </ul>
+        <section id="background-prop" class="properties">
+            <h2>
+                <i lang="en">background</i>
+                <svg>
+                    <use xlink:href="img/sprite.svg#arrow-down"></use>
+                </svg>
+            </h2>
+            <div class="properties__content">
+                <div class="annotation">
+                    <p>Дозволяє одночасно задати кілька параметрів фону в чіткій послідовності:</p>
+                    <ol>
+                        <li>Визначити колір;</li>
+                        <li>Встановити фонове зображення;</li>
+                        <li>Задати початкове положення фонового зображення;</li>
+                        <li>Визначити як повторюватиметься фонове зображення;</li>
+                        <li>Встановити, чи прокручуватиметься фонове зображення разом із вмістом;</li>
+                        <li>Масштабувати фонове зображення відповідно до заданих розмірів;</li>
+                        <li>Вказати градієнтну заливку фону.</li>
+                    </ol>
+                    <pre>
+                        <code>
+selector{
+    background: green url(sweettexture.jpg) top center / 200px 200px no-repeat fixed padding-box content-box;
+}
+                        </code>
+                    </pre>
+                </div>
+                <div class="emulation-group">
+                    <div class="emulation-group__check">
+                        <label>
+                            Режим розробника
+                            <input value="true" type="checkbox" name="develop">
+                        </label>
+                    </div>
+                    <div class="emulation-group__emulation-dev">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#question"></use>
+                        </svg>
+                        <label>
+                            <i lang="en">background</i>:
+                            <input type="text" name="background">
+                        </label>
+                    </div>
+                    <div style="text-align: center;" class="emulation-group__emulation">
+                        <i lang="en">background</i>:
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-color</i>:
+                                <select data-selected='test' class="test-observer" style="display: block;" name="color">
+                                    <option> red </option>
+                                    <option> blue </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-image</i>:
+                                <input style="display: block;" type="text" name="image">
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-position</i>:
+                                <select data-selected='test' style="display: block;" name="position">
+                                    <option> top </option>
+                                    <option> bottom </option>
+                                    <option> left </option>
+                                    <option> right </option>
+                                    <option> center </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-size</i>:
+                                <select data-selected='test' style="display: block;" name="size">
+                                    <option> / cover </option>
+                                    <option> / contain </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-repeat</i>:
+                                <select data-selected='test' style="display: block;" name="repeat">
+                                    <option> repeat-x </option>
+                                    <option> repeat-y </option>
+                                    <option> repeat </option>
+                                    <option> space </option>
+                                    <option> round </option>
+                                    <option> no-repeat </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-attachment</i>:
+                                <select data-selected='test' style="display: block;" name="attachment">
+                                    <option> scroll </option>
+                                    <option> fixed </option>
+                                    <option> local </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-origin</i>:
+                                <select data-selected='test' style="display: block;" name="origin">
+                                    <option> border-box </option>
+                                    <option> padding-box </option>
+                                    <option> content-box </option>
+                                </select>
+                            </label>
+                        </div>
+                        <div style="display: inline-block;">
+                            <label style="display: block;">
+                                <i lang="en">background-clip</i>:
+                                <select data-selected='test' style="display: block;" name="clip">
+                                    <option> border-box </option>
+                                    <option> padding-box </option>
+                                    <option> content-box </option>
+                                    <option> text </option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="properties__result__wrap">
+                    <div class="properties__result"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        2023, IHOR[honcharenko]
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
