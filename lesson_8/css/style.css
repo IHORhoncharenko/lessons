@@ -1,5 +1,5 @@
-@import url("fonts.css");
-@import url("reset.css");
+@import url('fonts.css');
+@import url('reset.css');
 
 body {
   padding: 15px;
@@ -11,6 +11,10 @@ h1 > i.taxonomy {
   color: white;
   font-weight: 700;
   text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+}
+i.taxonomy {
+  font-family: monospace;
+  letter-spacing: 2px;
 }
 .main-header > hgroup {
   text-align: center;
@@ -36,6 +40,9 @@ h1 > i.taxonomy {
   position: absolute;
   overflow: hidden;
   z-index: -1000;
+}
+.main-header > nav > ul li {
+  list-style: inside;
 }
 
 .main-header > nav > ul li:hover {
@@ -87,8 +94,7 @@ h1 > i.taxonomy {
 .properties__content .annotation > ol li {
   list-style: decimal;
 }
-.properties__result__wrap {
-  position: relative;
+.properties__result {
   max-width: 50em;
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.299);
@@ -99,11 +105,6 @@ h1 > i.taxonomy {
   font-size: 30px;
   text-shadow: 1px 1px 1px rgba(65, 60, 60, 0.6);
   min-height: 20em;
-}
-.properties__result {
-  position: absolute;
-  max-width: 300px;
-  max-height: 300px;
 }
 .emulation-group__check {
   margin-bottom: 20px;
@@ -121,34 +122,380 @@ h1 > i.taxonomy {
 .emulation-group__emulation-dev {
   position: relative;
 }
-svg.modal + label::before {
-  content: "background: 1)background-color 2)background-image 3)background-position / 4)background-size 5)background-repeat 6)background-attachment 7)background-origin 8)background-clip";
+#background-prop svg.modal + label::before {
+  content: 'background: 1)background-color 2)background-image 3)background-position / 4)background-size 5)background-repeat 6)background-attachment 7)background-origin 8)background-clip';
   position: absolute;
   color: rgba(96, 151, 105, 0.604);
   bottom: 20px;
   vertical-align: middle;
 }
-.emulation-group__emulation-dev svg:hover {
+#background-prop .emulation-group__emulation-dev svg:hover {
   cursor: pointer;
   fill: rgba(96, 151, 105, 0.868);
 }
-svg {
+#background-prop svg {
   max-width: 20px;
   max-height: 20px;
   vertical-align: middle;
   fill: rgba(96, 151, 105, 0.604);
+}
+.figma section {
+  margin: 0 auto;
+}
+a:hover {
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: rgba(114, 105, 109, 0.98) 3px 3px 20px,
+    rgb(87, 217, 102) -2px 5px 30px;
+  color: white;
 }
 footer {
   text-align: center;
   font-family: monospace;
   letter-spacing: 5px;
 }
-/* html::before{
-  content: 'Ddtlsnm Dfis rjynfrnys lfys';
-  background: gray;
-  width: 100%;
-  height: 100%;
-  display: block;
+.whitecollar-wrap {
+  background: url('../img/priroda.jpg') 0 0 / cover no-repeat;
+  padding: 50px 0;
+}
+/* згідно завдання внутрішні вертикальні відступи на око десь в два рази меньші за розинотальні, тому вказую по 30px https://prnt.sc/ASxIshoxhZ5G */
+#whitecollar {
+  max-width: 742px;
+  padding: 30px 60px 30px 69px;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  background-color: white;
+}
+#whitecollar > hgroup {
+  text-transform: capitalize;
+}
+#whitecollar > hgroup,
+#whitecollar > .figma__text-container {
+  margin-bottom: 20px;
+}
+#whitecollar > hgroup > p {
+  font-weight: 500;
+  color: #37393f;
+  margin-bottom: 16px;
+}
+#whitecollar > hgroup > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  color: #37393f;
+}
+#whitecollar > hgroup > p:before {
+  content: '';
+  background-color: #40ddb6;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  margin-right: 6px;
+}
+#whitecollar > .figma__text-container p {
+  margin-bottom: 15px;
+  line-height: 1.46;
+}
+#whitecollar > .figma__text-container + ul {
+  font-family: 'Poppins', sans-serif;
+  color: #37393f;
+  font-size: 20px;
+  margin-bottom: 43px;
+}
+#whitecollar > .figma__text-container + ul li:not(:last-child) {
+  margin-bottom: 23px;
+}
+#whitecollar > .figma__text-container + ul li::before {
+  content: '';
+  background: url('../img/vector.svg');
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Так як на мій погляд розглядаємий блок контенту інтегрований в теги dl>dt+dd найповніше розкриє його зміст, а синаксис не дозволяє робити більш ніж обну обгортку всередині тегу dl мною було прийнято рішення реалізувати ідентичність макету саме таким чином. Акцентую увагу, що таке рішення з реалізацією цього блоку контенту являється фактом того що дочірніми тегами для тегу dl мають бути dt та dd і допускається тільки один тег div в якості обгортки для тегів dt та dd. Аде при зміні контенту верстка не ламається тому я гадаю що з завданням справився і знайшов спосіб реалізувати логіку в css яка відображає в деталях макет для специфічної розмітки html*/
+#whitecollar dl {
+  display: inline-block;
+  max-width: 613px;
+  margin-bottom: 37px;
+}
+#whitecollar dl > div {
+  display: inline-block;
+}
+#whitecollar dl > div:nth-child(1) dt,
+#whitecollar dl > div:nth-child(1) dd {
+  padding-left: 58.117px;
+}
+#whitecollar dl > div:nth-child(2) dt,
+#whitecollar dl > div:nth-child(2) dd {
+  padding-left: 58.512px;
+}
+#whitecollar dl > div dt > strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #37393f;
+  margin-bottom: 3px;
+  line-height: normal;
+}
+#whitecollar dl > div dd {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #7d7d7d;
+  line-height: 1.35;
+}
+
+/* Дуже не подабається рішення з підігнаною під макет шириною блоку котентку..але в іншому випадку тект не буде йти в дві строки..тут треба питати Анжелу, чи це критично, щоб текст всередині dd був в дві строки.*/
+
+#whitecollar dl > div:nth-child(1) {
+  padding: 31px 32px 32px 32px;
+  margin-right: 21px;
+  position: relative;
+  max-width: 47.3%;
+}
+#whitecollar dl > div:nth-child(2) {
+  padding: 31px 37px 32px 37px;
+  position: relative;
+  max-width: 48.4%;
+}
+#whitecollar dl > div:nth-child(1)::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/exp.svg');
+  width: 39.117px;
+  height: 38.88px;
   position: absolute;
-  z-index: 1000;
-} */
+  left: 32px;
+}
+#whitecollar dl > div:nth-child(2)::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/winner.svg');
+  width: 39.512px;
+  height: 38.17px;
+  position: absolute;
+  left: 37px;
+}
+
+#whitecollar dl + button {
+  background: #6b77e5;
+  max-width: 184px;
+  max-height: 65px;
+  padding: 21px 27px 22px 27px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#whitecollar dl + button:hover {
+  cursor: pointer;
+  background: #4859f2;
+}
+/* Прийшлось трохи відступити від макету по відступам щоб адекватно відображалось в моєму документі з урахуванням фонового зображення, гадаю Анжелі сподобається */
+.discover-wrap {
+  background: url('../img/priroda2.jpg') 0 0 / cover no-repeat;
+  padding: 50px 0px;
+}
+#discover {
+  max-width: 1340px;
+  background: white;
+  padding: 30px 60px;
+}
+#discover .figma__articles-container article {
+  margin-bottom: 58px;
+}
+#discover .figma__articles-container article:not(:nth-child(3n)) {
+  margin-right: 34px;
+}
+#discover hgroup {
+  text-align: center;
+}
+#discover hgroup p {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+#discover hgroup p::before {
+  content: '';
+  display: inline-block;
+  background: #40ddb6;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+}
+#discover hgroup h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+#discover hgroup + p {
+  text-align: center;
+  color: #7d7d7d;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.46;
+}
+#discover .discover-wrap__header-section {
+  margin: 0px 184px 47px 184px;
+}
+
+#discover article:hover {
+  box-shadow: rgba(0, 0, 0, 0.323) 12px 12px 10px -2px;
+  border-bottom-right-radius: 50px;
+}
+.clothing-wrap {
+  background: url('../img/priroda3.jpg') 0 0 / cover no-repeat;
+  padding: 50px 0px;
+}
+#clothing {
+  max-width: 1240px;
+  background: white;
+  padding: 100px;
+  color: #807d7e;
+  font-family: 'Causten', sans-serif;
+  font-size: 20px;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+}
+#clothing h2 {
+  color: #3c4242;
+  font-family: 'CoreSansC', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.19643;
+  letter-spacing: 0.56px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  position: relative;
+}
+#clothing h2::before {
+  content: '';
+  display: inline-block;
+  border-radius: 10px;
+  background: #8a33fd;
+  width: 6px;
+  height: 28px;
+  vertical-align: top;
+  position: absolute;
+  left: -15px;
+}
+#clothing .clothing__text-container {
+  max-height: 575px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#clothing .clothing__text-container.active {
+  max-height: 100%;
+  overflow: visible;
+}
+#clothing .clothing__text-container p strong {
+  color: #807d7e;
+  font-family: 'CoreSansC', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+}
+#clothing .clothing__text-container p {
+  margin-bottom: 20px;
+}
+#clothing .clothing__text-container .clothing__text-container__attantion {
+  margin-bottom: 25px;
+}
+/* реалізуємо схлопування через специфічність відступів в контенті*/
+#clothing
+  .clothing__text-container
+  .clothing__text-container__attantion:not(:first-child) {
+  margin-top: 25px;
+}
+#clothing .clothing__text-container .taxonomy {
+  font-style: normal;
+  font-family: 'Causten', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+#clothing button {
+  color: #807d7e;
+  font-family: 'CoreSansC', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.675;
+  letter-spacing: 0.4px;
+  background: white;
+}
+#clothing button:hover {
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: rgba(114, 105, 109, 0.98) 3px 3px 20px,
+    rgb(87, 217, 102) -2px 5px 30px;
+  color: white;
+}
+#banner {
+  font-size: 0;
+  max-width: 1240px;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+#banner div:nth-child(1) {
+  vertical-align: top;
+  max-width: 613.997px;
+  width: 100%;
+  background: url('../img/banner-part-one.jpg') no-repeat;
+  padding: 183px 74px 175px 74px;
+  display: inline-block;
+}
+#banner div:nth-child(2) {
+  max-width: 626.003px;
+  width: 100%;
+  background: url('../img/banner-part-two.jpg');
+  display: inline-block;
+  height: 640px;
+}
+#banner div:nth-child(1) h2 {
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'CoreSansC', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1.47059;
+  letter-spacing: 0.208px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#banner div:nth-child(1) p {
+  font-family: 'Causten', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+#banner div:nth-child(1) a {
+  background: #fff;
+  border-radius: 8px;
+  width: 168px;
+  height: 46px;
+  color: #3c4242;
+  text-align: center;
+  font-family: 'Causten', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  padding: 12px 44px;
+  display: inline-block;
+}
+#banner div:nth-child(1) a:hover {
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: rgba(114, 105, 109, 0.98) 3px 3px 20px,
+    rgb(87, 217, 102) -2px 5px 30px;
+  color: white;
+}
