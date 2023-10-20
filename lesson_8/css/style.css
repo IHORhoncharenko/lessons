@@ -44,7 +44,9 @@ i.taxonomy {
 .main-header > nav > ul li {
   list-style: inside;
 }
-
+.main-header > nav > ul {
+  display: inline-block;
+}
 .main-header > nav > ul li:hover {
   font-weight: 600;
   cursor: pointer;
