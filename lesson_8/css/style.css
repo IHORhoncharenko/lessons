@@ -96,6 +96,9 @@ i.taxonomy {
 .properties__content .annotation > ol li {
   list-style: decimal;
 }
+.properties__content .annotation > pre {
+  text-wrap: balance;
+}
 .properties__result {
   max-width: 50em;
   padding: 10px;
