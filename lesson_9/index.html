@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Курси HTML-розробника: урок 9 | Freelancer Life Style</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <hgroup>
+            <h1>Псевдокласи та псевдоелементи</h1>
+            <p>Верстка елементів макетів та довільне відпрацювання нових можливостей <dfn><abbr title="Cascading Style Sheets"><i lang="en">CSS</i></abbr></dfn></p>
+        </hgroup>
+
+        <nav>
+            <h2>Навігація</h2>
+            <ul data-id="main-navigation">
+                <li><a href="#practice">Довільне відпрацювання</a></li>
+                <li><a href="#why-us">Верстка компоненту макета: "<i class="named-component" lang="en">Why Us For International Business Management Consulting!</i>"</a></li>
+                <li><a href="#business-plan">Верстка компоненту макета: "<i class="named-component" lang="en">We Care About Your
+                            Business Plan.</i>"</a></li>
+                <li><a href="#how-we-work">Верстка компоненту макета: "<i class="named-component" lang="en">How We Work</i>"</a></li>
+                <li><a href="#jewels">Верстка компоненту макета: "<i class="named-component" lang="en">We Develop Create Custom Jewels.</i>"</a></li>
+                <li><a href="#game">Гра</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="practice">
+        <p>Список псевдокласів</p>
+        <ul>
+            <li>:active</li>
+            <li>:is</li>
+            <li>:any-link</li>
+            <li>:checked</li>
+            <li>:default</li>
+            <li>:defined</li>
+            <li>:dir()</li>
+            <li>:disabled</li>
+            <li>:empty</li>
+            <li>:enabled</li>
+            <li>:first</li>
+            <li>:first-child</li>
+            <li>:first-of-type</li>
+            <li>:fullscreen</li>
+            <li>:focus</li>
+            <li>:hover</li>
+            <li>:indeterminate</li>
+            <li>:in-range</li>
+            <li>:invalid</li>
+            <li>:lang()</li>
+            <li>:last-child</li>
+            <li>:last-of-type</li>
+            <li>:left</li>
+            <li>:link</li>
+            <li>:not()</li>
+            <li>:nth-child()</li>
+            <li>:nth-last-child()</li>
+            <li>:nth-last-of-type()</li>
+            <li>:nth-of-type()</li>
+            <li>:only-child</li>
+            <li>:only-of-type</li>
+            <li>:optional</li>
+            <li>:out-of-range</li>
+            <li>:read-only</li>
+            <li>:read-write</li>
+            <li>:required</li>
+            <li>:right</li>
+            <li>:root</li>
+            <li>:scope (en-US)</li>
+            <li>:target</li>
+            <li>:valid</li>
+            <li>:visited</li>
+        </ul>
+        <p>Список псевдоелементів</p>
+        <ul>
+            <li>::after</li>
+            <li>::before</li>
+            <li>::cue</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <li>::selection</li>
+            <li>::slotted</li>
+            <li>::backdrop</li>
+            <li>::placeholder</li>
+            <li>::marker</li>
+            <li>::spelling-error (en-US)</li>
+            <li>::grammar-error</li>
+        </ul>
+        <dl>
+            <dt class="active">:active</dt>
+            <dd>
+                Псевдоклас :active відповідає елементу в момент, коли він активується користувачем. Він дає змогу сторінці зреагувати, коли елемент активується. Взаємодія елемента з мишею - це, як правило, час між натисканням і відпусканням користувачем кнопки миші.
+            </dd>
+            <dt class="is">:is</dt>
+            <dd>
+                :is() - це функція псевдокласу CSS, яка приймає список селекторів як аргумент, і вибирає будь-який елемент, який може бути обраний одним із селекторів у цьому списку. Це корисно під час перепису величезних селекторів у більш компактну форму.
+            </dd>
+            <dt class="any-link">:any-link</dt>
+            <dd>
+                Селектор псевдокласу CSS :any-link являє собою елемент, який діє як вихідний якір гіперпосилання, незалежно від того, чи було воно відвідано. Іншими словами, він відповідає всім елементам a, area, або link, які мають атрибут href. Таким чином, він відповідає всім елементам, які використовують :link або :visited.<br>
+                <a href="https://example.com">З <i lang="en">href</i> атрибутом</a><br />
+                <a>Без <i lang="en">href</i> атрибута</a>
+            </dd>
+            <dt class="checked">:checked</dt>
+            <dd>
+                CSS псевдокласи :checked CSS знаходить будь-які елементи radio (<label>input type="radio<input type="radio"></label>), checkbox (<label>input type="checkbox"<input type="checkbox"></label>) або option (option усередині select), які обрано або увімкнено. Користувач може змінити цей стан, натиснувши на елемент, або вибравши інше значення, у цьому разі :checked повторно не застосується до елемента, а збережеться.
+            </dd>
+            <dt class="default">:default</dt>
+        </dl>
+    </div>
+    <div id="why-us">
+        <section lang="en" class="why-us-container">
+            <img src="img/our-team.jpg" alt="Представник компанії WhiteCollar та замовник, посміхаючись, радісно тиснуть один одному руку.">
+            <h2>Why Us For International Business Management Consulting!</h2>
+            <div class="why-us-container__text-container">
+                <p>
+                    Completely synergized resourced taxings relationships premiers markets ultivate one-to-one customer service with robust ideas dynamically innovated resources leveling customer service for state of the art customer service innovate product for reliable supply engage web services cutting-edge deliverables.
+                </p>
+                <p>
+                    Proactively envisioned multimedia based expertise media growth superior collaboration.
+                </p>
+                <p>
+                    One-to-one customer service with robust ideas dynamically innovated resources for reliable supply engage web services cutting-edge deliverables.
+                </p>
+            </div>
+            <div class="why-us-container__our-benefits">
+                <div></div>
+                <section>
+                    <h3>Our benefits</h3>
+                    <div class="why-us-container__our-benefits__text-container">
+                        <p>
+                            Incubate standards compliant
+                            channels benefits.
+                        </p>
+                        <ul>
+                            <li>Credibly reintermediate backend</li>
+                            <li>Holistically foster superior</li>
+                            <li>Distinctively exploit optimal</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <article class="faq-container" lang="en">
+            <h2>Frequently Asked Questions</h2>
+            <p>
+                Leveling customer service for state of the art customer service innovate product for reliable supply engage web services cutting-edge deliverables.
+            </p>
+
+            <dl>
+                <div>
+                    <dt><span>How does our pricing works ?</span></dt>
+                    <dd>some kind of answer</dd>
+                </div>
+                <div>
+                    <dt><span>Where do I look for “Frequently Asked” Questions?</span></dt>
+                    <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime officia dicta delectus, perspiciatis autem velit aliquid ratione quo quidem harum omnis qui praesentium. Odio, corporis numquam, possimus odit recusandae perspiciatis voluptatum rem assumenda quos tempore sunt magnam et enim commodi? Itaque soluta voluptatibus alias magnam nam totam provident commodi aspernatur natus deserunt, labore maiores illo repellat perspiciatis quasi voluptas quidem nulla eveniet vitae dolorem autem earum assumenda quo eos! Laboriosam officiis dolores recusandae vel quis repellendus sit illo error. Rem minima perspiciatis illum doloremque praesentium nemo, eum sit atque explicabo neque alias cum facilis ad, odio delectus distinctio repudiandae illo!</dd>
+                </div>
+                <div>
+                    <dt><span>Which template is the best for business?</span></dt>
+                    <dd>some kind of answer</dd>
+                </div>
+                <div>
+                    <dt><span>Which template is the best for business?</span></dt>
+                    <dd>some kind of answer</dd>
+                </div>
+            </dl>
+        </article>
+    </div>
+    <div id="business-plan">
+        <section lang="en" class="business-plan-container">
+            <hgroup>
+                <p>Welcome Whitecollar</p>
+                <h2>We Care About Your Business Plan.</h2>
+            </hgroup>
+            <div class="business-plan-container__text-container">
+                <p>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy foster collaborative thinking to further the overal.
+                </p>
+                <p>
+                    Leverage agile frameworks to provide a robust synopsis for high level overviews.Iterative approaches to corporate strategy
+                </p>
+            </div>
+            <dl>
+                <div>
+                    <dt>Our Vision</dt>
+                    <dd>Capitalize on low hanging fruit to identify a ballpark value added activity to beta clickthroughs.</dd>
+                </div>
+                <div>
+                    <dt>Our Mision</dt>
+                    <dd>Podcasting operational change management inside of workflows to establish a framework.</dd>
+                </div>
+                <div>
+                    <dt>New advantage 1</dt>
+                    <dd>Podcasting operational change management inside of workflows to establish a framework.</dd>
+                </div>
+                <div>
+                    <dt>New advantage 2</dt>
+                    <dd>Podcasting operational change management inside of workflows to establish a framework.</dd>
+                </div>
+                <div>
+                    <dt>New advantage 3</dt>
+                    <dd>Podcasting operational change management inside of workflows to establish a framework.</dd>
+                </div>
+            </dl>
+            <button type=button>More About Us</button>
+        </section>
+    </div>
+    <div id="how-we-work">
+        <section lang="en" class="how-we-work-container">
+            <hgroup>
+                <p>Work Process</p>
+                <h2>How We Work</h2>
+            </hgroup>
+            <dl>
+                <div>
+                    <dt>Make Appointment</dt>
+                    <dd>
+                        Leverage agile frameworks provide
+                        synopsishigh level overviews
+                        value proposition.
+                    </dd>
+                    <dd>
+                        <a href="#">Testimonials</a>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Consultation</dt>
+                    <dd>
+                        Leverage agile frameworks provide
+                        synopsishigh level overviews
+                        value proposition.
+                    </dd>
+                    <dd>
+                        <a href="#">Testimonials</a>
+                    </dd>
+                </div>
+                <div>
+                    <dt>Enjoy the Service</dt>
+                    <dd>
+                        Leverage agile frameworks provide
+                        synopsishigh level overviews
+                        value proposition.
+                    </dd>
+                    <dd>
+                        <a href="#">Testimonials</a>
+                    </dd>
+                </div>
+            </dl>
+        </section>
+    </div>
+    <div id="jewels">
+        <section lang="en" class="jewels-container">
+            <hgroup>
+                <p>#02 <br> new jewellery <br> collection</p>
+                <h2>We Develop Create <br> <span>Custom Jewels</span>.</h2>
+            </hgroup>
+            <div class="jewels-container__text-container">
+                <article>
+                    <div class="jewels-container__jewels-container__text-container__img-wrap">
+                        <img src="img/earring-one.jpg" alt="Some text.">
+                    </div>
+                    <h3><a href="#">Embossed hoop earrings</a></h3>
+                    <p>$144.00</p>
+                </article>
+                <article>
+                    <div class="jewels-container__jewels-container__text-container__img-wrap">
+                        <img src="img/earring-two.jpg" alt="Some text.">
+                    </div>
+                    <h3><a href="#">Embossed hoop earrings</a></h3>
+                    <p>$144.00</p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <div id="game">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <footer>
+        2023, IHOR[honcharenko]
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

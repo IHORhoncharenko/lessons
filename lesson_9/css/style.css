@@ -1,0 +1,584 @@
+@import url('fonts.css');
+@import url('reset.css');
+
+body {
+  padding: 15px;
+}
+header.main-header {
+  margin-bottom: 50px;
+}
+.main-header > hgroup {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.main-header > hgroup > h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.main-header > hgroup > p {
+  font-size: small;
+  font-style: italic;
+  text-decoration: overline;
+}
+header.main-header > nav {
+  padding: 5px 0;
+  background-color: rgba(96, 151, 105, 0.159);
+}
+header.main-header > nav > ul li > a:hover {
+  font-weight: 600;
+  cursor: pointer;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+header.main-header > nav > h2 {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  z-index: -1000;
+}
+#why-us {
+  max-width: 692px;
+  margin: 0 auto;
+}
+#why-us > article {
+  margin-bottom: 50px;
+}
+#why-us .why-us-container {
+  color: #7d7d7d;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.462;
+  margin-bottom: 50px;
+}
+#why-us .why-us-container > img {
+  margin-bottom: 37px;
+}
+#why-us .why-us-container > h2 {
+  margin-bottom: 3px;
+}
+#why-us h2,
+h3 {
+  color: #37393f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27;
+}
+#why-us .why-us-container__text-container p:first-child {
+  margin-bottom: 42px;
+}
+#why-us .why-us-container__text-container p:nth-child(2) {
+  color: #6b77e5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 12px;
+}
+#why-us .why-us-container__text-container p:last-child {
+  margin-bottom: 40px;
+}
+#why-us .why-us-container__our-benefits {
+  font-size: 0;
+}
+#why-us .why-us-container__our-benefits section:first-of-type h3 {
+  margin-bottom: 15px;
+}
+#why-us .why-us-container__our-benefits > div:first-child {
+  display: inline-block;
+  background: url('../img/decor1.jpg');
+  width: 331px;
+  height: 262px;
+  margin-right: 29px;
+}
+#why-us .why-us-container__our-benefits > section {
+  display: inline-block;
+  max-width: 332px;
+}
+#why-us .why-us-container__our-benefits > h3 {
+  margin-bottom: 15px;
+}
+#why-us
+  .why-us-container__our-benefits
+  .why-us-container__our-benefits__text-container
+  p:first-child {
+  color: #40ddb6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 21px;
+}
+#why-us
+  .why-us-container__our-benefits
+  .why-us-container__our-benefits__text-container
+  ul:first-of-type
+  li {
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: normal;
+}
+#why-us
+  .why-us-container__our-benefits
+  .why-us-container__our-benefits__text-container
+  ul:first-of-type
+  li::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/check.svg');
+  width: 27px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#why-us
+  .why-us-container__our-benefits
+  .why-us-container__our-benefits__text-container
+  ul:first-of-type
+  li:not(:last-child) {
+  margin-bottom: 30px;
+}
+#why-us .faq-container > h2 {
+  margin-bottom: 4px;
+}
+#why-us .faq-container > p {
+  color: #7d7d7d;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  line-height: 1.462;
+}
+#why-us .faq-container > p:last-of-type {
+  margin-bottom: 45px;
+}
+#why-us .faq-container dl > div {
+  border: 1px solid #e3e3e3;
+  padding: 25px 30px;
+}
+#why-us .faq-container dl > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+#why-us .faq-container dt > span {
+  color: #37393f;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+#why-us .faq-container dt > span::after {
+  content: '';
+  display: block;
+  background: url('../img/plus.svg');
+  width: 16px;
+  height: 16px;
+  float: right;
+}
+#why-us .faq-container dt > span.close::after {
+  content: '';
+  display: block;
+  background: url('../img/minus.svg');
+  width: 16px;
+  height: 16px;
+  float: right;
+}
+#why-us .faq-container dt > span:hover {
+  cursor: pointer;
+  font-weight: 600;
+  text-shadow: rgba(114, 105, 109, 0.98) 3px 3px 20px,
+    rgb(87, 217, 102) -2px 5px 30px;
+  color: white;
+}
+/* Цей варіант не підходить для робочого проекта, але я вже не хотів заморочуватись */
+#why-us .faq-container dd {
+  display: none;
+}
+#why-us .faq-container dd.show {
+  display: inline-block;
+}
+#why-us .faq-container dt.show {
+  margin-bottom: 20px;
+}
+#business-plan {
+  margin-bottom: 50px;
+}
+#business-plan .business-plan-container {
+  margin: 0 auto;
+  max-width: 675px;
+  font-family: 'Inter', sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.462;
+}
+#business-plan .business-plan-container > hgroup {
+  color: #37393f;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+#business-plan .business-plan-container > hgroup > p {
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+#business-plan .business-plan-container > hgroup > p::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #40ddb6;
+  margin-right: 6px;
+}
+#business-plan .business-plan-container > hgroup > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+#business-plan
+  .business-plan-container
+  > .business-plan-container__text-container
+  p:not(:last-child) {
+  margin-bottom: 16px;
+}
+#business-plan
+  .business-plan-container
+  > .business-plan-container__text-container,
+#business-plan .business-plan-container > dl {
+  margin-bottom: 48px;
+  max-height: 340px;
+  overflow: hidden;
+}
+#business-plan .business-plan-container > dl.show {
+  max-height: 100%;
+  overflow: visible;
+}
+/* Роблю через невідому властивість, так як специфічність верстки не дозволяє зробити іншим способом відповідно макету, пояснював більш детально в попередніх завданнях */
+#business-plan .business-plan-container > dl > div {
+  border: 1px solid #e3e3e3;
+  padding: 28px 41px 28px 38px;
+  max-width: 596px;
+  position: relative;
+}
+#business-plan .business-plan-container > dl > div > dt,
+#business-plan .business-plan-container > dl > div > dd {
+  padding-left: 46px;
+}
+#business-plan .business-plan-container > dl > div > dt {
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#business-plan .business-plan-container > dl > div:not(:last-child) {
+  margin-bottom: 31px;
+}
+#business-plan .business-plan-container > dl > div::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/check.svg');
+  width: 26px;
+  height: 27px;
+  margin-right: 19px;
+  position: absolute;
+}
+#business-plan .business-plan-container > dl + button {
+  padding: 21px 35px 22px 35px;
+  background: #6b77e5;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+#business-plan .business-plan-container > dl + button:hover {
+  background: #2538dd;
+  cursor: pointer;
+}
+#how-we-work {
+  margin-bottom: 50px;
+}
+#how-we-work dl > div {
+  display: inline-block;
+  max-width: 386px;
+}
+#how-we-work .how-we-work-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  color: #7d7d7d;
+  font-size: 18px;
+  line-height: 1.462;
+}
+#how-we-work .how-we-work-container > hgroup {
+  color: #37393f;
+}
+#how-we-work .how-we-work-container > hgroup > p {
+  color: #37393f;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+#how-we-work .how-we-work-container > hgroup > p::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #40ddb6;
+  margin-right: 6px;
+}
+#how-we-work .how-we-work-container > hgroup > h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 77px;
+}
+/* Знову ж таки, через специфічність верстки і коректності синтксису я не можу додавати додаткові обгортки, тому рішення тільке через позиціювання бачу. Звертаю увагу, що адаптив я не беру до уваги в цьому завданні */
+#how-we-work .how-we-work-container > dl > div {
+  background: #f4f4f4;
+  padding: 58px 43px;
+  position: relative;
+}
+#how-we-work .how-we-work-container > dl > div::before {
+  content: '';
+  width: 72px;
+  height: 72px;
+  top: -36px;
+  left: 157px;
+  display: inline-block;
+  position: absolute;
+}
+#how-we-work .how-we-work-container > dl > div:nth-child(1)::before {
+  background: url('../img/appointment.svg');
+}
+#how-we-work .how-we-work-container > dl > div:nth-child(2)::before {
+  background: url('../img/consultation.svg');
+}
+#how-we-work .how-we-work-container > dl > div:nth-child(3)::before {
+  background: url('../img/service.svg');
+}
+#how-we-work .how-we-work-container > dl > div > dt {
+  font-family: 'Poppins', sans-serif;
+  color: #37393f;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+#how-we-work .how-we-work-container > dl > div > dd:not(:last-of-type) {
+  margin-bottom: 37px;
+}
+#how-we-work .how-we-work-container > dl > div > dd:last-of-type {
+  color: #6b77e5;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+#how-we-work .how-we-work-container > dl > div > dd:last-of-type:hover {
+  cursor: pointer;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+footer {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+
+/* Це самий адський макет який був..я дуже запарився щоб його відтворити згідно макету. Досить важко було відтворити ідентичність макету в поєднанні з специфічністю розмітки яку я використав */
+#jewels {
+  margin-bottom: 250px;
+}
+#jewels .jewels-container {
+  margin: 0 auto;
+  max-width: 1214px;
+  font-family: 'Cormorant Infant', serif;
+  color: #000;
+  position: relative;
+}
+#jewels .jewels-container > .jewels-container__text-container {
+  font-size: 0;
+  padding-left: 483px;
+}
+#jewels .jewels-container > hgroup,
+#jewels .jewels-container > .jewels-container__text-container,
+#jewels .jewels-container > .jewels-container__text-container > article {
+  display: inline-block;
+}
+#jewels .jewels-container > hgroup {
+  font-weight: 700;
+}
+#jewels .jewels-container > hgroup > p {
+  font-size: 46px;
+  line-height: 1.13;
+  position: absolute;
+  top: 0;
+  left: 870px;
+}
+#jewels .jewels-container > hgroup > h2 {
+  position: absolute;
+  font-size: 60px;
+  line-height: 1.15;
+  max-width: 485px;
+  top: 150px;
+}
+#jewels .jewels-container > hgroup > h2 > span {
+  text-decoration: underline;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article
+  > .jewels-container__jewels-container__text-container__img-wrap
+  > img {
+  max-width: 334px;
+  max-height: 381px;
+}
+#jewels .jewels-container > .jewels-container__text-container > article > h3,
+#jewels .jewels-container > .jewels-container__text-container > article > p {
+  font-family: 'Cormorant Infant', serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+#jewels .jewels-container > .jewels-container__text-container > article > h3 {
+  margin-bottom: 4px;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article
+  > h3:hover {
+  cursor: pointer;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article
+  > .jewels-container__jewels-container__text-container__img-wrap
+  > img {
+  max-width: 334px;
+  max-height: 381px;
+  margin: 9px -10px -9px 10px;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article
+  > .jewels-container__jewels-container__text-container__img-wrap {
+  border: 1px solid #000;
+  margin-bottom: 34px;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article:nth-child(1) {
+  margin-right: 55px;
+  margin-top: 32px;
+}
+#jewels
+  .jewels-container
+  > .jewels-container__text-container
+  > article:nth-child(2) {
+  position: absolute;
+  padding-top: 186px;
+}
+
+/* Цей блок не зробив самостійно*/
+#game {
+  background-color: rgba(96, 151, 105, 0.159);
+}
+#game > div:not(:first-child) {
+  visibility: hidden;
+}
+#game div:nth-child(1) {
+  width: 990px;
+  height: 30px;
+  background: green;
+  margin-left: 250px;
+}
+#game div:nth-child(2) {
+  width: 25px;
+  height: 100px;
+  background: rgb(49, 68, 49);
+  margin-left: 1170px;
+}
+#game div:nth-child(3) {
+  width: 100px;
+  height: 20px;
+  background: rgb(148, 182, 148);
+  margin-left: 1170px;
+}
+#game div:nth-child(4) {
+  width: 15px;
+  height: 70px;
+  background: rgb(72, 84, 72);
+  margin-left: 1255px;
+}
+#game div:nth-child(5) {
+  width: 350px;
+  height: 15px;
+  background: rgb(72, 84, 72);
+  margin-left: 920px;
+}
+#game div:nth-child(6) {
+  width: 350px;
+  height: 10px;
+  background: rgb(72, 84, 72);
+  margin-left: 580px;
+}
+#game div:nth-child(7) {
+  width: 10px;
+  height: 100px;
+  background: rgb(72, 84, 72);
+  margin-left: 580px;
+}
+#game div:nth-child(8) {
+  width: 50px;
+  height: 50px;
+  background: rgb(10, 234, 10);
+  margin-left: 560px;
+}
+#game > div:hover,
+#game > div:hover + div {
+  visibility: visible;
+}
+/* Основні псевдоелементи я використовую в дз на протязі курсу..їх така велика кількість що більшу чатсину ми навіть не розбирали на уроці. Вважаю ддя себе цього достатньо..це дуже нудно розбирати кожен псевдоклассі не розумію навіщо це мені якщо навіть на уроці це не розбирали */
+#practice {
+  margin-bottom: 50px;
+}
+#practice dl {
+  background: rgba(96, 151, 105, 0.159);
+}
+#practice dl dt {
+  font-weight: 600;
+}
+#practice .active + dd:active {
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+  cursor: pointer;
+}
+#practice :is(.is + dd):hover {
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+  cursor: pointer;
+}
+#practice a:any-link:hover {
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+  cursor: pointer;
+}
+#practice label > input:checked {
+  display: none;
+  text-shadow: 3px 3px 20px #72696dfa, -2px 5px 30px #57d966;
+  color: white;
+}
+#practice label > input:default {
+  display: inline-block;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
