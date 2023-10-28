@@ -1,0 +1,29 @@
+@import url('fonts.css');
+@import url('reset.css');
+body {
+  text-align: center;
+  padding: 15px;
+}
+p {
+  margin: 20px 0;
+}
+img {
+  max-width: 300px;
+  margin: 20px 0;
+}
+header {
+  margin-bottom: 50px;
+}
+hgroup {
+  text-align: center;
+  margin-bottom: 25px;
+}
+hgroup > h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+hgroup > p {
+  font-size: small;
+  font-style: italic;
+  text-decoration: overline;
+}
