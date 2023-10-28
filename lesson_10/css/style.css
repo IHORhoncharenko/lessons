@@ -27,3 +27,8 @@ hgroup > p {
   font-style: italic;
   text-decoration: overline;
 }
+footer {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
