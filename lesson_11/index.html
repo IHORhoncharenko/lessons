@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Курси HTML-розробника: урок 11 | Freelancer Life Style</title>
+    <link rel="preload" as="image" imagesrcset="
+                img/content/girl_w_190.webp 190w,
+                img/content/girl_w_316.webp 316w,
+                img/content/girl_w_403.webp 403w,
+                img/content/girl_w_457.webp 457w,
+                img/content/girl_w_520.webp 520w" imagesizes="(min-width: 1024px) 520px, 50vw">
+</head>
+
+<body>
+    <header class="main-header">
+        <hgroup>
+            <h1>Методологія - BEM</h1>
+            <p>БЕМ — Блок, Елемент, Модифікатор</p>
+        </hgroup>
+    </header>
+    <section lang="en" class="main-section">
+        <header>
+            <div class="main-section__navigation navigation-main">
+                <div class="navigation-main__logo">
+                    <img src="img/content/logo.svg" alt="Euphoria">
+                </div>
+                <ul class="navigation-main__categories-list">
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#"><strong>Women</strong></a>
+                    </li>
+                    <li>
+                        <a href="#">Combos</a>
+                    </li>
+                    <li>
+                        <a href="#">Joggers</a>
+                    </li>
+                </ul>
+                <div class="navigation-main__search">
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+                <div class="navigation-main__additional-interaction-elements user-interaction-icons">
+                    <div class="user-interaction-icons__wish-list"></div>
+                    <div class="user-interaction-icons__user-page"></div>
+                    <div class="user-interaction-icons__cart"></div>
+                </div>
+            </div>
+            <h2>Raven Hoodie With <br> Black colored Design</h2>
+        </header>
+        <nav class="main-section__breadcrumb breadcrumb breadcrumb--margin">
+            <h3 class="breadcrumb__heading">Navigation</h3>
+            <ol class="breadcrumb__list">
+                <li>
+                    <a href="#">Shop</a>
+                </li>
+                <li>
+                    <a href="#">Women</a>
+                </li>
+                <li>
+                    <a href="#">Top</a>
+                </li>
+            </ol>
+        </nav>
+        <div class="main-section__img product-img">
+            <div class="product-img__prev-section list-prev">
+                <ul class="list-prev__img">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="list-prev__navigation">
+                    <button type="button"></button>
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="product-img__main-section">
+                <img fetchpriority="high" decoding="async" sizes="(min-width: 1024px) 520px, 50vw" src="img/content/girl.webp" alt="Girl in hoodie." srcset="
+                img/content/girl_w_190.webp 190w,
+                img/content/girl_w_316.webp 316w,
+                img/content/girl_w_403.webp 403w,
+                img/content/girl_w_457.webp 457w,
+                img/content/girl_w_520.webp 520w">
+            </div>
+        </div>
+        <div class="main-section__product-info main-product-info">
+            <div class="main-product-info__review review-section">
+                <ul class="review-section__stars">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <span class="review-section__rating-value">3.5</span>
+                <span class="review-section__review-count">120 comment</span>
+            </div>
+            <div class="main-product-info__size size-variation">
+                <div class="size-variation__header">
+                    <p class="size-variation__name">Select Size</p>
+                    <p class="size-variation__instruction">
+                        <a href="#">Size Guide</a>
+                    </p>
+                </div>
+                <ul class="size-variation__list">
+                    <li>
+                        <a href="#">XS</a>
+                    </li>
+                    <li>
+                        <a href="#">S</a>
+                    </li>
+                    <li>
+                        <a href="#">M</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">L</a>
+                    </li>
+                    <li>
+                        <a href="#">XL</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-product-info__color color-variation">
+                <p class="color-variation__name">Colours Available</p>
+                <ul class="color-variation__list">
+                    <li class="active">
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-product-info__price-cart">
+                <button>Add to cart</button>
+                <div class="main-product-info__price">
+                    <!-- <s>$75.00</s> -->
+                    <p>$63.00</p>
+                </div>
+            </div>
+            <div class="main-product-info__labels">
+                <ul>
+                    <li>Secure payment</li>
+                    <li>Size & Fit</li>
+                    <li>Free shipping</li>
+                    <li>Free Shipping & Returns</li>
+                </ul>
+            </div>
+        </div>
+        <section>
+            <div class="main-section__product-description main-product-description">
+                <div class="main-product-description__text product-description">
+                    <h3>Product Description</h3>
+                    <dl>
+                        <div class="product-description__tab-description text-value">
+                            <dt class="active">Description</dt>
+                            <dd>
+                                <div class="text-value__text">
+                                    100% Bio-washed Cotton – makes the fabric extra soft & silky. Flexible ribbed crew neck. Precisely stitched with no pilling & no fading. Provide all-time comfort. Anytime, anywhere. Infinite range of matte-finish HD prints.
+                                </div>
+                                <ul>
+                                    <li>
+                                        Fabric
+                                        <p>Bio-washed Cotton</p>
+                                    </li>
+                                    <li>
+                                        Pattern
+                                        <p>Printed</p>
+                                    </li>
+                                    <li>
+                                        Fit
+                                        <p>Regular-fit</p>
+                                    </li>
+                                    <li>
+                                        Neck
+                                        <p>Round Neck</p>
+                                    </li>
+                                    <li>
+                                        Sleeve
+                                        <p>Half-sleeves</p>
+                                    </li>
+                                    <li>
+                                        Style
+                                        <p>Casual Wear</p>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </div>
+                        <div class="product-description__coments">
+                            <dt>User comments <span>21</span></dt>
+                            <dd style="display: none;">Some text</dd>
+                        </div>
+                        <div class="product-description__faq">
+                            <dt>Question & Answer <span>4</span></dt>
+                            <dd style="display: none;">Some text</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div class="main-product-description__video">
+                    <img sizes="(min-width: 1024px) 520px, 50vw" srcset="
+                     img/content/video-prev_w_190.webp 190w,
+                     img/content/video-prev_w_532.webp 532w" src="img/content/video-prev.jpg" alt="video preview">
+                </div>
+            </div>
+        </section>
+        <article class="main-section__similar-products item-list">
+            <h3>Similar Products</h3>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name1.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">White T-Shirt</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$13.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name2.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Dark Green Sweatshirt kjk jkj kj</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$127.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name3.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Levender Sweatshirt ....</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$133.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name4.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Urban jacket with white ....</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$79.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name5.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Plain White T-Shirt</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$123.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name6.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Checks Shirt with white.....</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$123.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name7.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">One piece black top & ....</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$123.00</p>
+            </article>
+            <article class="item-list__item product-prev">
+                <div class="product-prev__img-section">
+                    <span></span>
+                    <img src="img/content/name8.jpg" alt="name1">
+                </div>
+                <div class="product-prev__header product-header">
+                    <h4 class="product-header__name">Denim Blue Shirt</h4>
+                    <p class="product-header__brand">Priya’s Brand</p>
+                </div>
+                <p class="product-prev__price">$38.00</p>
+            </article>
+        </article>
+        <footer>
+            <div class="main-section__navigation-list link-list-section">
+                <div class="link-list-section__list">
+                    <p>Need Help</p>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns & Refunds</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="link-list-section__list">
+                    <p>Company</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">euphoria Blog</a></li>
+                        <li><a href="#">euphoriastan</a></li>
+                        <li><a href="#">Collaboration</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </div>
+                <div class="link-list-section__list">
+                    <p>More Info</p>
+                    <ul>
+                        <li><a href="#">Term and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="link-list-section__list">
+                    <p>Location</p>
+                    <address>
+                        <a href="mailto:support@euphoria.in">support@euphoria.in</a><br>
+                        Eklingpura Chouraha, Ahmedabad Main Road <br>
+                        (NH 8- Near Mahadev Hotel) Udaipur, India- 313002
+                    </address>
+                </div>
+            </div>
+            <p>
+                Download The App
+            </p>
+            <div class="main-section__icons icons-link">
+                <div class="icons-link__social-icons">
+                    <ul>
+                        <li><a target="_blank" href="#"></a></li>
+                        <li><a target="_blank" href="#"></a></li>
+                        <li><a target="_blank" href="#"></a></li>
+                        <li><a target="_blank" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="icons-link__market">
+                    <ul>
+                        <li>
+                            <div>
+                                <p>
+                                    android app on
+                                </p>
+                                <a target="_blank" href="#">Google Play</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <p>
+                                    Available on the
+                                </p>
+                                <a target="_blank" href="#">App Store</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-section__category">
+                <dl>
+                    <dt>
+                        Popular Categories
+                    </dt>
+                    <dd style="display: none;">
+                        Some text
+                    </dd>
+                </dl>
+            </div>
+            <p>
+                Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+            </p>
+        </footer>
+    </section>
+    <footer>
+        <time datetime="2023-11-13"> 13 ​​листопада 2023 р., </time> IHOR[honcharenko]
+    </footer>
+</body>
+
+</html>
