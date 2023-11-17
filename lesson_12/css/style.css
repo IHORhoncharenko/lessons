@@ -18,6 +18,9 @@ body {
   font-family: monospace;
   letter-spacing: 5px;
 }
+.main-container {
+  position: relative;
+}
 .main-container__header {
   vertical-align: middle;
 }
@@ -117,7 +120,6 @@ body {
 }
 .header-page {
   text-align: center;
-  position: relative;
 }
 .logo {
   display: inline-block;
