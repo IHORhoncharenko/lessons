@@ -1,0 +1,233 @@
+@import url('fonts.css');
+@import url('reset.css');
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+.main-header {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main-footer {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.main-container__header {
+  vertical-align: middle;
+}
+.details-contact__address > address > p {
+  padding: 2.5px 0px;
+  margin-right: 42px;
+  display: inline-block;
+}
+.details-contact__address > address > p::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/location.svg') 00 / cover no-repeat;
+  width: 16px;
+  height: 22px;
+  margin-right: 9px;
+  vertical-align: middle;
+}
+.details-contact {
+  padding: 19px 0px;
+  background: #37393f;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+}
+.details-contact address {
+  font-style: normal;
+}
+.details-contact__address > address > a::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/mail.svg') 00 / cover no-repeat;
+  width: 20px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 11px;
+}
+.details-contact__address {
+  margin-right: 365px;
+  display: inline-block;
+}
+.details-contact__wrapper {
+  display: inline-block;
+}
+.details-contact__work-time > p::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/time.svg') 00 / cover no-repeat;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.details-contact__work-time {
+  margin-right: 50px;
+  display: inline-block;
+}
+.details-contact__social-link {
+  display: inline-block;
+}
+.list-icons li {
+  display: inline-block;
+}
+.list-icons li:not(:last-child) {
+  margin-right: 16px;
+}
+.list-icons li:nth-child(1) > a::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/insta.svg') 00 / cover no-repeat;
+  width: 17px;
+  height: 16px;
+  vertical-align: middle;
+}
+.list-icons li:nth-child(2) > a::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/fb.svg') 00 / cover no-repeat;
+  width: 17px;
+  height: 16px;
+  vertical-align: middle;
+}
+.list-icons li:nth-child(3) > a::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/twiter.svg') 00 / cover no-repeat;
+  width: 17px;
+  height: 16px;
+  vertical-align: middle;
+}
+.list-icons li:nth-child(4) > a::before {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/pintrest.svg') 00 / cover no-repeat;
+  width: 17px;
+  height: 16px;
+  vertical-align: middle;
+}
+.header-page {
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+}
+.logo__img {
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.logo__img > img {
+  width: 42px;
+  height: 29px;
+}
+.logo__text {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: normal;
+  vertical-align: middle;
+}
+.row-naviganion {
+  padding: 30px 0px 36px 0px;
+}
+.logo__text > span {
+  color: #6b77e5;
+}
+.row-naviganion__logo-wrapper {
+  margin-right: 195px;
+}
+.row-naviganion__btn {
+  padding: 21px 35px 22px 35px;
+  background: #6b77e5;
+  color: #fff;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.row-naviganion__btn:hover {
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 5px #273ae7;
+  border-radius: 15px;
+}
+.row-naviganion__btn:active {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+.row-naviganion__menu > nav > h3 {
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  z-index: -1000;
+}
+.menu {
+  display: inline-block;
+}
+.menu li {
+  display: inline-block;
+}
+.menu__first-menu-level > li {
+  margin-right: 40px;
+}
+.menu__drop-down-list::after {
+  content: '';
+  display: inline-block;
+  background: url('../img/decor/arrow-menu.svg') 00 / cover no-repeat;
+  vertical-align: middle;
+  width: 8px;
+  height: 4px;
+  margin-left: 10px;
+}
+.menu__first-menu-level > .menu__drop-down-list,
+.menu__second-menu-level > .menu__drop-down-list {
+  position: relative;
+}
+.menu__second-menu-level,
+.menu__third-menu-level {
+  visibility: hidden;
+  position: absolute;
+}
+.menu__second-menu-level {
+  padding-top: 30px;
+  top: 0;
+  left: 0;
+}
+.menu__third-menu-level {
+  left: 100%;
+  padding-left: 50px;
+  vertical-align: top;
+  top: 0;
+}
+.menu__second-menu-level li {
+  white-space: nowrap;
+  padding: 10px 10px 10px 0px;
+}
+.menu__third-menu-level li {
+  display: block;
+  top: 0;
+}
+.menu__drop-down-list:hover {
+  cursor: pointer;
+}
+.menu__first-menu-level > .menu__drop-down-list:hover .menu__second-menu-level,
+.menu__second-menu-level > .menu__drop-down-list:hover .menu__third-menu-level {
+  visibility: visible;
+}
+.menu__drop-down-list:hover:after {
+  transform: rotate(-90deg);
+}
