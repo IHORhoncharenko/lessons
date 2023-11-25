@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uk-UA">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Курси HTML-розробника: урок 13 | Freelancer Life Style</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <h1>Трансформації в CSS</h1>
+        </header>
+            <div class="practice">
+                <ul>
+                    <li>
+                        <span>Translate (x, y)</span>
+                        <input type="text" value="translate(10px, 20px)">
+                    </li>
+                    <li>
+                        <span>Scale (x, y)</span>
+                        <input type="text" value="scale(1.5)">
+                    </li>
+                    <li>
+                        <span>Rotate (n + deg)</span>
+                        <input type="text" value="rotate(45deg)">
+                    </li>
+                    <li>
+                        <span>Skew (x + deg, y + deg)</span>
+                        <input type="text" value="skew(25deg, 20deg)">
+                    </li>
+                    <li>
+                        <span>Matrix (a, c, b, d, x, y)</span>
+                        <input type="text" value="matrix(1, 2, 3, 4, 5, 6)">
+                    </li>
+                    <li>
+                        <span>Множественные 2D трансформации</span>
+                        <input type="text" value="translateX(10px) rotate(10deg) translateY(5px)">
+                    </li>
+                    <li>
+                        <span>Translate3d (x, y, z)</span>
+                        <input type="text" value="translate3d(12px, 50%, 3em)">
+                    </li>
+                    <li>
+                        <span>Scale3d (x, y, z)</span>
+                        <input type="text" value="scale3d(2.5, 1.2, 0.3)">
+                    </li>
+                    <li>
+                        <span>Rotate3d (x, y, z, deg)</span>
+                        <input type="text" value="rotate3d(1, 2, 3, 10deg)">
+                    </li>
+                    <li>
+                        <span>Matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</span>
+                        <input type="text" value="matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)">
+                    </li>
+                    <li>
+                        <span>Множественные 3D трансформации (translate3d + rotate3d)</span>
+                        <input type="text" value="translate3d(12px, 50%, 3em) rotate3d(1, 2, 3, 10deg)">
+                    </li>
+                    <li class="practice__non-interactive">
+                        <span>Transform-style</span>
+                        <input type="text" value="preserve-3d">
+                    </li>
+                    <li class="practice__non-interactive">
+                        <span>Backface-visibility</span>
+                        <input type="text" value="hidden">
+                    </li>
+                    <li class="practice__non-interactive">
+                        <span>Transform-origin</span>
+                        <input type="text" value="55px 50px">
+                    </li>
+                    <li class="practice__non-interactive">
+                        <span>Perspective-origin</span>
+                        <input type="text" value="500% 200%">
+                    </li>
+                </ul>
+                <div class="practice__area">
+                    <div class="practice__item">
+                    </div>
+                </div>
+            </div>
+            <div class="car">
+                <article>
+                    <h2>Car</h2>
+                    <div class="car__wheel wheel">
+                        <div class="wheel__disk disk">
+                            <div class="disk__triangle triangle">
+                                <div class="triangle__row"></div>
+                                <div class="triangle__row"></div>
+                                <div class="triangle__row"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car__wheel wheel">
+                        <div class="wheel__disk disk">
+                            <div class="disk__triangle triangle">
+                                <div class="triangle__row"></div>
+                                <div class="triangle__row"></div>
+                                <div class="triangle__row"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car__headlight"></div>
+                    <div class="car__window"></div>
+                    <div class="car__headlight-front"></div>
+                </article>
+            </div>
+        <footer class="main-footer">
+            IHOR[honcharenko] | <time datetime="2023-11-25"> 25 ​​листопада 2023 р.</time>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

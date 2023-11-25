@@ -1,0 +1,152 @@
+@import url('fonts.css');
+@import url('reset.css');
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+}
+.main-header {
+  font-size: 30px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.main-footer {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.wheel {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid gray;
+  width: 100px;
+  height: 100px;
+  background: black;
+}
+.wheel__disk {
+  width: 80%;
+  height: 80%;
+  background: gainsboro;
+  border-radius: 50%;
+  margin-left: 50%;
+  margin-top: 50%;
+  transform: translate(-50%, -50%);
+}
+.triangle__row:nth-child(1) {
+  border-bottom: 3px solid rgb(174, 42, 42);
+  width: 30%;
+  height: 30%;
+  transform: translate(114%, 0);
+}
+.triangle__row:nth-child(2) {
+  border-bottom: 3px solid rgb(174, 42, 42);
+  width: 30%;
+  height: 30%;
+  transform: translate(89%, 279%) rotate(58deg);
+}
+.triangle__row:nth-child(3) {
+  border-bottom: 3px solid rgb(174, 42, 42);
+  width: 30%;
+  height: 30%;
+  transform: translate(140%, 245%) rotate(-63deg);
+}
+.car {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  transform: translate(0, 20%);
+  border: 1px solid black;
+  margin-bottom: 100px;
+  border-radius: 200px 20px 20px 20px;
+}
+.car article{
+  position: relative;
+}
+.car__wheel{
+  position: absolute;
+}
+.car__wheel:nth-child(2){
+  top: 150px;
+  left: 100px;
+}
+.car__wheel:nth-child(3){
+  top: 150px;
+  right: 100px;
+}
+.practice ul {
+  margin-right: 100px;
+}
+.practice {
+  text-align: center;
+}
+.practice ul,
+.practice__area {
+  display: inline-block;
+  vertical-align: middle;
+}
+.practice__area {
+  width: 300px;
+  height: 300px;
+  background: #0000ff;
+}
+.practice__item {
+  width: 300px;
+  height: 300px;
+  background: yellow;
+}
+.practice > ul {
+  text-align: right;
+}
+.practice > ul > li > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.practice > ul > li > span::after {
+  content: '⋙';
+  display: inline-block;
+  font-weight: 600;
+  margin: 5px;
+}
+.practice > ul > li > input {
+  font-family: monospace;
+  font-style: italic;
+  font-weight: 600;
+  border-bottom: dotted;
+}
+.practice__item > p {
+  transform: translate(0, -50%);
+  position: relative;
+  top: 50%;
+  font-size: 30px;
+}
+.practice__non-interactive{
+  color: gainsboro;
+}
+.car__headlight{
+  width: 30px;
+  height: 50px;
+  border: 1px solid black;
+  left: 100%;
+  position: absolute;
+  transform: translate(-50%, 200%);
+}
+.car__window{
+  width: 80%;
+  height: 100px;
+  border: 1px solid black;
+  transform: translate(100px, 0);
+  border-radius: 90px 0 0 0;
+}
+.car__headlight-front{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  transform: translate(10px, 0);
+}
+article > h2{
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  z-index: -9999;
+  position: absolute;
+}
